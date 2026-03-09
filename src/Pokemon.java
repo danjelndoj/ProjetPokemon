@@ -11,8 +11,8 @@ public class Pokemon {
     private Etat etat;
 
     public Pokemon(String nom){
-        this.nom = nom
+        this.nom = nom;
     }
-public 
+
 }
 
