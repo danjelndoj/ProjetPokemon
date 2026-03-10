@@ -3,6 +3,7 @@ public class Combat {
     private Joueur joueur2;
     
     public Joueur() {
-        
+
     }
 }
+  
