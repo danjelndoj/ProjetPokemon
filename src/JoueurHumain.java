@@ -1,6 +1,8 @@
-class JoueurHumain extends Joueur{
-    private int nbBadge = 0;
-    private Boolean[] badges;
-    private int nbVictoire = 0;
-       
+class JoueurHumain extends Joueur {
+    protected int nbBadge = 0;
+    protected Boolean[] badges;
+    protected int nbVictoire = 0;
+
+    public JoueurHumain() {
+    }
 }
