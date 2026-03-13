@@ -17,4 +17,4 @@ public class Joueur {
     public int getpokemonKO(){
         return this.pokemonKO;
     }
-}
+} test
