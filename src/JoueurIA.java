@@ -9,4 +9,5 @@ class JoueurIA extends Joueur {
         this.nomVille = nomVille;
 
     }
+    
 }
