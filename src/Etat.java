@@ -6,8 +6,7 @@ public class Etat {
 
     }
 
-    public effet(){
-        
-        
+     public  effet() {
+              
     }
 }
