@@ -10,9 +10,23 @@ public class Pokemon {
     private Attaque[] attaques;
     private Etat etat;
 
-    public Pokemon(String nom) {
+    public Pokemon(String nom, Type type1, Type type2) {
         this.nom = nom;
         this.attaques = new Attaque[4];
+        this.type1 = type1;
+        this.type2 = type2;
+    }
+
+    public Type getType1() {
+        return type1;
+    }
+
+    public Type getType2() {
+        return type2;
+    }
+
+    public String getNom() {
+        return nom;
     }
 
     public Attaque getAttaqueByIndex(int index) {
