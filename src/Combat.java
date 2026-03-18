@@ -4,7 +4,6 @@ public class Combat {
     private Pokemon pokemonActif1;
     private Pokemon pokemonActif2;
 
-
     public Combat(Joueur joueur1, Joueur joueur2, Pokemon pokemonActif1, Pokemon pokemonActif2) {
         this.joueur1 = joueur1;
         this.joueur2 = joueur2;
@@ -13,7 +12,6 @@ public class Combat {
     }
 
     public Joueur victoire() {
-
 
     }
 
@@ -24,4 +22,3 @@ public class Combat {
     public void charger(int numeroSauvegarde) {
     }
 }
-

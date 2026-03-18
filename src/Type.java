@@ -1,6 +1,5 @@
 public class Type {
 
-    // Seulement ce qui est dans le UML
     public String nom;
 
     public Type(String nom) {
@@ -19,10 +18,8 @@ public class Type {
         return !havePenaltyVs(typeAdverse) && !haveBonusVs(typeAdverse);
     }
 
-    public boolean is
-
     public boolean isSameAs(Pokemon attacker) {
-        return this.nom.equals(attacker.type1.nom)
-            || (attacker.type2 != null && this.nom.equals(attacker.type2.nom));
+        return this.nom.equals(attacker.getType1().nom)
+                || (attacker.getType1() != null && this.nom.equals(attacker.getType2().nom));
     }
 }
