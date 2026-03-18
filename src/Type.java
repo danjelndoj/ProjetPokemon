@@ -19,6 +19,8 @@ public class Type {
         return !havePenaltyVs(typeAdverse) && !haveBonusVs(typeAdverse);
     }
 
+    public boolean is
+
     public boolean isSameAs(Pokemon attacker) {
         return this.nom.equals(attacker.type1.nom)
             || (attacker.type2 != null && this.nom.equals(attacker.type2.nom));
