@@ -12,6 +12,7 @@ public class Combat {
     }
 
     public Joueur victoire() {
+            return joueur1;
 
     }
 

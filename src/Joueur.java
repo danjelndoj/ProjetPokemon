@@ -20,12 +20,8 @@ public class Joueur {
     public int getpokemonKO() {
         return this.pokemonKO;
     }
-<<<<<<< HEAD
-} 
-=======
 
     public Joueur() {
 
     }
 }
->>>>>>> e8ffcaf2c5cc0770696a308f299d7e998ac59feb
