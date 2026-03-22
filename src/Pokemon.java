@@ -36,4 +36,8 @@ public class Pokemon {
         return null;
     }
 
+    public int getPv() {
+        return this.pv;
+    }
+
 }

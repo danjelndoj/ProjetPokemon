@@ -12,14 +12,18 @@ public class Combat {
     }
 
     public Joueur victoire() {
+        if (joueur1.getpokemonKO() == 6)
+            return joueur2;
+        if (joueur2.getpokemonKO() == 6)
             return joueur1;
+        return null;
 
     }
 
     public int sauvegarder() {
+        return 0;
 
     }
 
     public void charger(int numeroSauvegarde) {
     }
-}

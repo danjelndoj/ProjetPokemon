@@ -6,7 +6,7 @@ public class Etat {
 
     }
 
-     public  effet() {
+     public void effet() {
               
     }
 }

@@ -24,4 +24,9 @@ public class Joueur {
     public Joueur() {
 
     }
+
+    public void ajouterKO() {
+        this.pokemonKO++;
+
+    }
 }
