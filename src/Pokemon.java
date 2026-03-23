@@ -28,6 +28,7 @@ public class Pokemon {
     public String getNom() {
         return nom;
     }
+    
 
     public Attaque getAttaqueByIndex(int index) {
         if (index >= 0 && index < attaques.length) {

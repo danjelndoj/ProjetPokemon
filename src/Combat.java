@@ -26,4 +26,7 @@ public class Combat {
     }
 
     public void charger(int numeroSauvegarde) {
+
     }
+
+}
