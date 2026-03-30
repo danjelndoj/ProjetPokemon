@@ -11,14 +11,22 @@ public class Combat {
         this.pokemonActif2 = pokemonActif2;
     }
 
-    public Joueur victoire() {
+    private Joueur victoire() {
         if (joueur1.getpokemonKO() == 6)
             return joueur2;
         if (joueur2.getpokemonKO() == 6)
             return joueur1;
-        return null;
-
     }
+
+    public Boolean finPartie(){
+        if (joueur1.get.pokemoKO()== 6 || joueur2.get.pokemonKO()== 6){
+            System.out.println("Le gagnant est " +
+                this.victoire().getNom());
+                return true;
+        }
+    }
+
+
 
     public int sauvegarder() {
         return 0;
