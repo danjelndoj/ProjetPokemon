@@ -16,6 +16,7 @@ public class Combat {
             return joueur2;
         if (joueur2.getpokemonKO() == 6)
             return joueur1;
+        return null;
     }
 
     public Boolean finPartie(){
