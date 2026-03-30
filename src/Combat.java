@@ -19,14 +19,14 @@ public class Combat {
     }
 
     public Boolean finPartie(){
-        if (joueur1.get.pokemoKO()== 6 || joueur2.get.pokemonKO()== 6){
+        if (joueur1.getpokemonKO()== 6 || joueur2.getpokemonKO()== 6){
             System.out.println("Le gagnant est " +
                 this.victoire().getNom());
                 return true;
         }
+        
+        return false;
     }
-
-
 
     public int sauvegarder() {
         return 0;
