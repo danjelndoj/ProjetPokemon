@@ -18,7 +18,7 @@ public class Partie {
     
         System.out.print("Saisissez votre pseudo : ");
         String nomJoueur1 = scanner.nextLine();
-        joueur1 = new JoueurHumain(nomJoueur1, new Pokemon[6]);
+        joueur1 = new JoueurHumain(nomJoueur1, new Pokemon[6], 0 );
 
         
         if (modeJeu == 1) {

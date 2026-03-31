@@ -1,6 +1,6 @@
 public class TypeManager {
 
-    // Les 15 types
+    
     public static final Type COMBAT     = new Type("Combat");
     public static final Type DRAGON     = new Type("Dragon");
     public static final Type EAU        = new Type("Eau");
@@ -17,7 +17,7 @@ public class TypeManager {
     public static final Type SPECTRE    = new Type("Spectre");
     public static final Type VOL        = new Type("Vol");
 
-    // Tableau des bonus [attaquant][défenseur]
+    
     private static final Type[][] BONUS = {
         {COMBAT, NORMAL}, {COMBAT, GLACE},  {COMBAT, ROCHE},
         {DRAGON, DRAGON},
@@ -35,7 +35,7 @@ public class TypeManager {
         {VOL,    PLANTE}, {VOL,    COMBAT},  {VOL,    INSECTE}
     };
 
-    // Tableau des pénalités [attaquant][défenseur]
+    
     private static final Type[][] PENALTY = {
         {COMBAT,     VOL},      {COMBAT,     PSY},
         {DRAGON,     DRAGON},
@@ -55,7 +55,7 @@ public class TypeManager {
         {VOL,        ELECTRIQUE},{VOL,       GLACE},     {VOL,    ROCHE}
     };
 
-    // Est-ce que attaquant a un bonus contre defenseur ?
+    
     public static boolean isBonus(Type attaquant, Type defenseur) {
         for (Type[] relation : BONUS) {
             if (relation[0].nom.equals(attaquant.nom) 
@@ -66,7 +66,7 @@ public class TypeManager {
         return false;
     }
 
-    // Est-ce que attaquant a une pénalité contre defenseur ?
+    
     public static boolean isPenalty(Type attaquant, Type defenseur) {
         for (Type[] relation : PENALTY) {
             if (relation[0].nom.equals(attaquant.nom) 
