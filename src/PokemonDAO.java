@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -25,25 +23,5 @@ DatabaseManager dbm = new DatabaseManager();
         } catch (SQLException e) {
             System.out.println("Erreur : " + e.getMessage());
         }
-    }
-
-    public double recupMulti(int fkAtt, int fkDef) {
-        String sql = "SELECT multi FROM efficacite WHERE fkAtt = ? AND fkDef = ? LIMIT 1";
-
-        try {
-            PreparedStatement pstmt = dbm.getConnection().prepareStatement(sql);
-            pstmt.setInt(1, fkAtt);
-            pstmt.setInt(2, fkDef);
-
-            ResultSet rs = pstmt.executeQuery();
-
-            if (rs.next()) {
-                return rs.getDouble("multi");
-            }
-
-        } catch (SQLException e) {
-            System.out.println("Erreur : " + e.getMessage());
-        }
-        return 0.0;
     }
 }
