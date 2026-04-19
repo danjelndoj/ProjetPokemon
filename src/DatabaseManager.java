@@ -8,31 +8,23 @@ import java.sql.SQLException;
  */
 public class DatabaseManager {
 
-    private static final String URL = "jdbc:mysql://localhost/pokemon"; //A modifier
-    private static final String USER = "userdb"; // A modifier
-    private static final String PASSWORD = "linux"; // A modifier
+    private static final String URL = "jdbc:mysql://localhost/pokemon";
+    private static final String USER = "root";
+    private static final String PASSWORD = "linux";
 
     private Connection connection;
 
-    /**
-     * Ouvre la connexion à la base.
-     */
+    
     public void connect() throws SQLException {
         if (connection == null || connection.isClosed()) {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
         }
     }
 
-    /**
-     * Retourne la connexion active.
-     */
-    public Connection getConnection() {
+   Connection getConnection() {
         return connection;
     }
 
-    /**
-     * Ferme la connexion.
-     */
     public void disconnect() throws SQLException {
         if (connection != null && !connection.isClosed()) {
             connection.close();

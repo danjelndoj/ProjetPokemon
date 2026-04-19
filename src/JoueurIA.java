@@ -3,7 +3,7 @@ class JoueurIA extends Joueur {
     private String nomArene;
     private String nomVille;
 
-    public JoueurIA(int arene, String nomArene, String nomVille, String nom, Pokemon[] pokemon) {
+    public JoueurIA(int arene, String nomArene, String nomVille, String nom, PokemonInstance[] pokemon) {
         this.arene = arene;
         this.nomArene = nomArene;
         this.nomVille = nomVille;

@@ -1,9 +1,9 @@
 public class Joueur {
     protected String nom;
-    protected Pokemon[] pokemon;
+    protected PokemonInstance[] pokemon;
     protected int pokemonKO = 0;
 
-    public Joueur(String nom, Pokemon[] pokemon, int pokemonKO) {
+    public Joueur(String nom, PokemonInstance[] pokemon, int pokemonKO) {
         this.nom = nom;
         this.pokemon = pokemon;
         this.pokemonKO = pokemonKO;
@@ -13,7 +13,7 @@ public class Joueur {
         return this.nom;
     }
 
-    public Pokemon[] getPokemon() {
+    public PokemonInstance[] getPokemon() {
         return this.pokemon;
     }
 
