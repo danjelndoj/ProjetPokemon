@@ -1,6 +1,6 @@
 public class TypeManager {
 
-    
+
     public static final Type COMBAT     = new Type("Combat");
     public static final Type DRAGON     = new Type("Dragon");
     public static final Type EAU        = new Type("Eau");
@@ -17,7 +17,7 @@ public class TypeManager {
     public static final Type SPECTRE    = new Type("Spectre");
     public static final Type VOL        = new Type("Vol");
 
-    
+   
     private static final Type[][] BONUS = {
         {COMBAT, NORMAL}, {COMBAT, GLACE},  {COMBAT, ROCHE},
         {DRAGON, DRAGON},
@@ -35,7 +35,7 @@ public class TypeManager {
         {VOL,    PLANTE}, {VOL,    COMBAT},  {VOL,    INSECTE}
     };
 
-    
+   
     private static final Type[][] PENALTY = {
         {COMBAT,     VOL},      {COMBAT,     PSY},
         {DRAGON,     DRAGON},
@@ -55,11 +55,11 @@ public class TypeManager {
         {VOL,        ELECTRIQUE},{VOL,       GLACE},     {VOL,    ROCHE}
     };
 
-    
+
     public static boolean isBonus(Type attaquant, Type defenseur) {
         for (Type[] relation : BONUS) {
-            if (relation[0].nom.equals(attaquant.nom) 
-             && relation[1].nom.equals(defenseur.nom)) {
+            if (relation[0].nom.equals(attaquant.nom)
+                    && relation[1].nom.equals(defenseur.nom)) {
                 return true;
             }
         }
@@ -69,11 +69,48 @@ public class TypeManager {
     
     public static boolean isPenalty(Type attaquant, Type defenseur) {
         for (Type[] relation : PENALTY) {
-            if (relation[0].nom.equals(attaquant.nom) 
-             && relation[1].nom.equals(defenseur.nom)) {
+            if (relation[0].nom.equals(attaquant.nom)
+                    && relation[1].nom.equals(defenseur.nom)) {
                 return true;
             }
         }
         return false;
+    }
+
+    public static Type getTypeByNom(String nom) {
+        switch (nom) {
+        case "Feu":
+            return FEU;
+        case "Eau":
+            return EAU;
+        case "Plante":
+            return PLANTE;
+        case "Electrique":
+            return ELECTRIQUE;
+        case "Normal":
+            return NORMAL;
+        case "Vol":
+            return VOL;
+        case "Poison":
+            return POISON;
+        case "Insecte":
+            return INSECTE;
+        case "Roche":
+            return ROCHE;
+        case "Sol":
+            return SOL;
+        case "Psy":
+            return PSY;
+        case "Combat":
+            return COMBAT;
+        case "Glace":
+            return GLACE;
+        case "Dragon":
+            return DRAGON;
+        case "Spectre":
+            return SPECTRE;
+        default:
+            return null;
+        }
     }
 }

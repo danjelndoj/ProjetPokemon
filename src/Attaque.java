@@ -13,3 +13,5 @@ public class Attaque {
         this.priorite = priorite;
     }
 }
+
+

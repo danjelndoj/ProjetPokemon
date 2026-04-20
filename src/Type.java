@@ -24,11 +24,8 @@ public class Type {
         return !havePenaltyVs(typeAdverse) && !haveBonusVs(typeAdverse);
     }
 
-    public boolean isSameAs(Pokemon attacker) {
+    public boolean isSameAs(PokemonInstance attacker) {
         return this.nom.equals(attacker.getType1().nom)
-                || (attacker.getType2() != null && this.nom.equals(attacker.getType2().nom));
-    }}
-
-   
-
-   
+               || (attacker.getType2() != null && this.nom.equals(attacker.getType2().nom));
+    }
+}
